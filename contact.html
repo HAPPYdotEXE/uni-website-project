@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Stuttgart Drive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-car logo-icon"></i>
+                <span>STUTTGART</span>DRIVE
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-container">
+
+                <section class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Question</option>
+                                <option value="return">Return/Exchange</option>
+                                <option value="wholesale">Wholesale Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </section>
+
+
+                <aside class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Address</h3>
+                            <p>123 Porschestraße<br>Stuttgart, Germany 70173</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>+49 711 1234567</p>
+                            <p>Mon-Fri: 9am-6pm CET</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>info@stuttgartdrive.com</p>
+                            <p>Response within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Porsche Official Social Media</h3>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/porsche/" target="_blank" rel="noopener noreferrer" 
+                               title="Porsche Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/porsche/" target="_blank" rel="noopener noreferrer"
+                               title="Porsche Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/Porsche" target="_blank" rel="noopener noreferrer"
+                               title="Porsche Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+
+<section class="map-section">
+    <h2>Our Location</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.227923035234!2d23.35372231546631!3d42.65509477916799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85c5ac42f8a5%3A0x9e035f7a8e605f1a!2sTechnical%20University%20Sofia!5e0!3m2!1sen!2sbg!4v1620000000000!5m2!1sen!2sbg" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            title="Technical University of Sofia - Main Building">
+        </iframe>
+    </div>
+    <div class="location-info">
+        <p><i class="fas fa-map-marker-alt"></i> 8 Kliment Ohridski Blvd., Sofia 1000, Bulgaria</p>
+        <p><i class="fas fa-university"></i> Technical University of Sofia - Main Building</p>
+        <p><i class="fas fa-external-link-alt"></i> <a href="https://www.tu-sofia.bg" target="_blank" rel="noopener">Official University Website</a></p>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <footer class="site-footer">
+            <div class="footer-container">
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links"></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> View Cart</a></li>
+                    </ul>
+                </div>
+        
+
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html#faq"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                        <li><a href="contact.html#shipping"><i class="fas fa-truck"></i> Shipping</a></li>
+                        <li><a href="contact.html#returns"><i class="fas fa-exchange-alt"></i> Returns</a></li>
+
+                    </ul>
+                </div>
+        
+
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="https://instagram.com/porsche" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/porsche" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/porsche" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="copyright-bar">
+                <p>&copy; 2023 Stuttgart Drive | University Project | Not affiliated with Porsche AG</p>
+            </div>
+        </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

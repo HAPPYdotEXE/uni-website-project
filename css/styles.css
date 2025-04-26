@@ -1,0 +1,470 @@
+:root {
+    --porsche-red: #d5001c;
+    --porsche-gold: #ffb800;
+    --porsche-black: #000000;
+    --porsche-white: #ffffff;
+    --porsche-gray: #2e2e2e;
+    --porsche-light-gray: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--porsche-light-gray);
+    color: var(--porsche-gray);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+header {
+    background-color: var(--porsche-black);
+    color: var(--porsche-white);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--porsche-red);
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: var(--porsche-white);
+}
+
+.logo-icon {
+    margin-right: 10px;
+    color: var(--porsche-gold);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: var(--porsche-white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--porsche-red);
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--porsche-red);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images-porsche.imgix.net/-/media/F9D62E45B045496DBC909B1A362B9DA1_4A3B5B18AE2F4CA799D84EF8EBBFCC30_CZ23V20OX0009-911-gt3-rs-driving-side?w=1759&q=85&auto=format') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--porsche-white);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn, .btn-subscribe {
+    display: inline-block;
+    background-color: var(--porsche-red);
+    color: var(--porsche-white);
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 12px 30px;
+}
+
+.btn-subscribe {
+    padding: 0 15px;
+    border-radius: 0 4px 4px 0;
+}
+
+.btn:hover, .btn-subscribe:hover {
+    background-color: #b00016;
+}
+
+
+.about {
+    padding: 80px 0;
+    background-color: var(--porsche-white);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: var(--porsche-black);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--porsche-red);
+    margin: 15px auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--porsche-red);
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    display: block;
+}
+
+
+.featured {
+    padding: 80px 0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: var(--porsche-white);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 18px;
+    color: var(--porsche-black);
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--porsche-red);
+    margin-bottom: 15px;
+}
+
+.product-rating {
+    color: var(--porsche-gold);
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--porsche-black);
+    color: var(--porsche-white);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.add-to-cart:hover {
+    background-color: var(--porsche-red);
+}
+
+
+footer, .site-footer {
+    background-color: var(--porsche-black);
+    color: var(--porsche-white);
+    padding: 50px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section h3, .footer-column h3 {
+    color: var(--porsche-red);
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-links, .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .footer-column ul li a {
+    color: var(--porsche-white);
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-links a:hover, .footer-column ul li a:hover {
+    color: var(--porsche-red);
+}
+
+.newsletter-form {
+    display: flex;
+    margin: 20px 0;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: var(--porsche-white);
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--porsche-red);
+}
+
+.copyright-bar,
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+
+.cart-item {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: var(--porsche-white);
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.item-image {
+    width: 100px;
+    height: 100px;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    color: var(--porsche-red);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.empty-cart i {
+    font-size: 50px;
+    color: #eee;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .about-content, .footer-container {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+}
+
+
+
+
